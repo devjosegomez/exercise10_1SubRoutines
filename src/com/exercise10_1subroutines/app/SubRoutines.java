@@ -17,7 +17,7 @@ public class SubRoutines {
 		ShowMessage();
 		num2 = input.nextInt();
 		
-		result = num1 + num2;
+		result = AddNumbers(num1, num2);
 		
 		System.out.println(ShowTunnedMessage("José, here's the result!"));
 		
@@ -26,7 +26,7 @@ public class SubRoutines {
 	}
 	
 	//Method to add 2 numbers
-	public int AddNumbers(int num1, int num2) {
+	public static int AddNumbers(int num1, int num2) {
 		return num1 + num2;
 	}
 
@@ -35,7 +35,7 @@ public class SubRoutines {
 	}
 	
 	public static String ShowTunnedMessage(String message) {
-		return "Hola " + message;
+		return "Hi " + message;
 	}
 	
 }
