@@ -11,13 +11,15 @@ public class SubRoutines {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Give me a number: ");
+		ShowMessage();
 		num1 = input.nextInt();
 		
-		System.out.println("Give me a number: ");
+		ShowMessage();
 		num2 = input.nextInt();
 		
 		result = num1 + num2;
+		
+		System.out.println(ShowTunnedMessage("José, here's the result!"));
 		
 		System.out.println(num1 + "+" + num2 + "=" + result);
 		
@@ -28,13 +30,12 @@ public class SubRoutines {
 		return num1 + num2;
 	}
 
-	public void ShowMessages() {
+	public static void ShowMessage() {
 		System.out.println("Enter a number: ");
 	}
 	
-	public String ShowTunnedMessage(String message) {
+	public static String ShowTunnedMessage(String message) {
 		return "Hola " + message;
 	}
-	
 	
 }
